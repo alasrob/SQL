@@ -1,0 +1,19 @@
+CREATE TABLE Baseball_Store (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, aisle INTEGER, price INTEGER);
+INSERT INTO Baseball_Store VALUES (1, "baseball", 100, 1, 5);
+INSERT INTO Baseball_Store VALUES (2, "glove", 20 , 1 , 100);
+INSERT INTO Baseball_Store VALUES (3, "baseball bat",  10, 2, 200);
+INSERT INTO Baseball_Store VALUES (4, "batting gloves",  40, 2, 20);
+INSERT INTO Baseball_Store VALUES (5, "cleats", 30, 3, 40);
+INSERT INTO Baseball_Store VALUES (6, "baseball socks",  50, 3, 5);
+INSERT INTO Baseball_Store VALUES (7, "pants", 50, 4, 20);
+INSERT INTO Baseball_Store VALUES (8, "belt",  50, 4, 5);
+INSERT INTO Baseball_Store VALUES (9, "hat",  50, 5, 20);
+INSERT INTO Baseball_Store VALUES (10, "baseball T", 5, 100, 10);
+INSERT INTO Baseball_Store VALUES (11, "elbow guard", 6, 30, 30);
+INSERT INTO Baseball_Store VALUES (12, "leg guard", 6, 30, 30);
+INSERT INTO Baseball_Store VALUES (13, "catcher's gear", 7, 10, 300);
+INSERT INTO Baseball_Store VALUES (14, "catcher's glove", 7, 10, 150);
+INSERT INTO Baseball_Store VALUES (15, "firstbaseman glove", 7, 10, 150);
+SELECT *FROM Baseball_Store ORDER by PRICE;
+SELECT SUM(price) FROM Baseball_Store;
+
